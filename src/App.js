@@ -6,7 +6,7 @@ import Timer from './Timer';
 
 
 const App = () => {
-  const [title, setTitle] = useState('Timer');
+  const [title, setTitle] = useState('Timer_Test');
   const [isLight, setisLight] = useState(false);
   const [timeArr, settimeArr] = useState(["00:00:00"]);
 
