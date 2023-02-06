@@ -51,7 +51,6 @@ const Timer = (props) => {
                 {`${hour > 9 ? hour : '0' + hour}:${minute > 9 ? minute : '0' + minute}:${second > 9 ? second : '0' + second}`}
             </h2>
             <div>
-                {console.log("111")}
                 <button onClick={start} style={{ color: props.isLight ? "black" : "white" }}>Start</button>
                 <button onClick={stop} style={{ color: props.isLight ? "black" : "white" }}>Stop</button>
                 <button onClick={reset} style={{ color: props.isLight ? "black" : "white" }}>Reset</button>
@@ -59,11 +58,6 @@ const Timer = (props) => {
 
 
             </div>
-            {/* <TimeList>
-                {console.log("222")}
-
-                {props.timeArr}
-            </TimeList> */}
 
             <TimeList timeArr={props.timeArr}/>
 

@@ -1,11 +1,10 @@
 import Item from "./Item";
 
 const TimeList = (props) => {
-  const test= [];
   return (
     <div className="TimeList">
-      {props.timeArr.map((c) => (
-        <Item key={Math.random()}>{c}</Item>
+      {props.timeArr.map((time) => (
+        <Item key={Math.random()} time={time}/>
       ))
       }
     </div>
